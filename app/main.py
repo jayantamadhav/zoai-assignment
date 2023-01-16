@@ -33,14 +33,3 @@ app.include_router(user_router, prefix="/users", tags=["Users"])
 app.include_router(hotel_router, prefix="/hotels", tags=["Hotel"])
 app.include_router(booking_router, prefix="/bookings", tags=["Booking"])
 app.include_router(rating_router, prefix="/ratings", tags=["Rating"])
-
-# @app.post("/contact")
-# async def add_contact(contact: Contact):
-#     new_contact = await create_contact(**contact.dict())
-#     return new_contact.id
-
-
-# @app.get("/contact", response_model=List[Contact])
-# async def all_contacts():
-#     contacts = await list_contact()
-#     return contacts
